@@ -1,0 +1,8 @@
+<h2>Employee List</h2>
+
+<ul>
+  <li *ngFor="let employee of employees">
+    {{ employee.name }} ({{ employee.position }})
+    <button (click)="deleteEmployee(employee.id)">Delete</button>
+  </li>
+</ul>
